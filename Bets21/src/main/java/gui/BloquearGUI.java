@@ -2,7 +2,6 @@ package gui;
 
 import java.awt.Color;
 import java.awt.Font;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.ResourceBundle;

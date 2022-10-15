@@ -2,9 +2,7 @@ package domain;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
-import java.util.Vector;
 import java.util.concurrent.ThreadLocalRandom;
 
 import javax.persistence.CascadeType;

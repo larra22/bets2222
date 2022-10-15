@@ -143,8 +143,8 @@ public class ApostarGUI extends JFrame {
 		jCalendar2.setBounds(40, 50, 225, 150);
 
 		// Code for JCalendar
-		//CerrarApuestaGUI duplicar = new CerrarApuestaGUI();
-		//duplicar.extractedCalendar();
+		//CerrarApuestaGUI duplicar = new CerrarApuestaGUI()
+		//duplicar.extractedCalendar()
 		this.jCalendar2.addPropertyChangeListener(new PropertyChangeListener() {
 			public void propertyChange(PropertyChangeEvent propertychangeevent) {
 				

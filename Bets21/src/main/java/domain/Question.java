@@ -44,7 +44,7 @@ public class Question implements Serializable {
 		this.question = query;
 		this.betMinimum = betMinimum;
 		this.result = null;
-		// this.event = event;
+		
 	}
 
 	/**

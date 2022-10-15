@@ -1,7 +1,6 @@
 package dataAccess;
 
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
@@ -85,8 +84,8 @@ public class DataAccess {
 
 			Seleccion s1 = new Seleccion("Futbol", "M", "Champions League");
 
-			// Estadistica est1=new Estadistica(YearMonth.of(year,month));
-			// db.persist(est1);
+			// Estadistica est1=new Estadistica(YearMonth.of(year,month))
+			// db.persist(est1)
 			SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
 			Date fechaNacimiento = formato.parse("05/05/1998");
 			AnadirUsuarioParameter info= new AnadirUsuarioParameter("Kim", "Posible", "Posible", 54654564,fechaNacimiento,"63546738H");

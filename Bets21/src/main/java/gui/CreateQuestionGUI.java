@@ -128,8 +128,8 @@ public class CreateQuestionGUI extends JFrame {
 		// Code for JCalendar
 		this.jCalendar.addPropertyChangeListener(new PropertyChangeListener() {
 			public void propertyChange(PropertyChangeEvent propertychangeevent) {
-//				this.jCalendar.addPropertyChangeListener(new PropertyChangeListener() {
-//					public void propertyChange(PropertyChangeEvent propertychangeevent) {
+//				this.jCalendar.addPropertyChangeListener(new PropertyChangeListener(
+//					public void propertyChange(PropertyChangeEvent propertychangeevent) 
 				if (propertychangeevent.getPropertyName().equals("locale")) {
 					jCalendar.setLocale((Locale) propertychangeevent.getNewValue());
 				} else if (propertychangeevent.getPropertyName().equals("calendar")) {
