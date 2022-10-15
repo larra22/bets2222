@@ -1,0 +1,5 @@
+sonar-scanner.bat \ 611e488dc3bbacdc2461e78945ef381810a89b24
+  -D"sonar.organization=larrans22" \
+  -D"sonar.projectKey=bets2002" \
+  -D"sonar.sources=." \
+  -D"sonar.host.url=https://sonarcloud.io"
