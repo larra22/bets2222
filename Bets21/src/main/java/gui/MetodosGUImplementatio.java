@@ -17,16 +17,15 @@ import com.toedter.calendar.JCalendar;
 import businessLogic.BLFacade;
 import configuration.UtilDate;
 
-public class MetodosGUImplementatio implements IMetodosGUI {
+public class MetodosGUImplementatio  {
 	private static final String ETIQUETAS ="Etiquetas";
 
-	@Override
+
 	public void crearTablaEventos() {
 		// TODO Auto-generated method stub
 		
 	}
 
-	//@Override
 	public void crearCalendarios(PropertyChangeEvent propertychangeevent, JCalendar jCalendar2, Calendar calendarAnt, Calendar calendarAct,
 			Vector<Date> datesWithEventsCurrentMonth, JTable tableEvents, DefaultTableModel tableModelEvents, JLabel jLabelEvents, 
 			JLabel jLabelQueries, String[] columnNamesEvents) {
