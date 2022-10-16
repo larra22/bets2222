@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>BetsLCI</groupId>
-  <artifactId>BetsLCI</artifactId>
+  <groupId>bets2002</groupId>
+  <artifactId>bets2002</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
 <build>
@@ -14,6 +14,25 @@
                <testFailureIgnore>true</testFailureIgnore>
             </configuration>
         </plugin>
+        <plugin>
+			<groupId>org.jacoco</groupId>
+			<artifactId>jacoco-maven-plugin</artifactId>
+			<version>0.8.8</version>
+			<executions>
+				<execution>
+					<id>prepare-agent</id>
+				<goals>
+					<goal>prepare-agent</goal>
+				</goals>
+				</execution>
+				<execution>
+					<id>report</id>
+					<goals>
+						<goal>report</goal>
+					</goals>
+				</execution>
+			</executions>
+		</plugin>
    </plugins>
 </build>
  <repositories>
@@ -29,7 +48,7 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <sonar.organization>larra22</sonar.organization>
  	<sonar.host.url>https://sonarcloud.io</sonar.host.url>
- 	<sonar.login>349fb030e4da9cb48da5292c2669ff0030f35488</sonar.login> 
+ 	<sonar.login>58c16258263729736ef67413936f7a5770bdec01</sonar.login> 
 </properties>
 
 <!-- https://mvnrepository.com/artifact/junit/junit -->
@@ -37,7 +56,7 @@
 	<dependency>
   	  <groupId>junit</groupId>
   	  <artifactId>junit</artifactId>
-  	  <version>4.5</version>
+  	  <version>4.13.2</version>
  	   <scope>test</scope>
 	</dependency> 
 		<dependency>
@@ -90,8 +109,33 @@
 			<groupId>javax.transaction</groupId>
 			<artifactId>jta</artifactId>
 			<version>1.1</version>
-		</dependency>		
+		</dependency>	
+		<!--  https://mvnrepository.com/artifact/net.bytebuddy/byte-buddy-agent  -->
+	<dependency>
+		<groupId>net.bytebuddy</groupId>
+		<artifactId>byte-buddy-agent</artifactId>
+		<version>1.10.10</version>
+		<scope>test</scope>
+	</dependency>
+	<!--  https://mvnrepository.com/artifact/net.bytebuddy/byte-buddy  -->
+	<dependency>
+		<groupId>net.bytebuddy</groupId>
+		<artifactId>byte-buddy</artifactId>
+		<version>1.10.10</version>
+	</dependency>
+	<!--  https://mvnrepository.com/artifact/org.objenesis/objenesis-tck  -->
+	<dependency>
+		<groupId>org.objenesis</groupId>
+		<artifactId>objenesis-tck</artifactId>
+		<version>3.0.1</version>
+	</dependency>
+	<!--  https://mvnrepository.com/artifact/org.mockito/mockito-all  -->
+	<dependency>
+		<groupId>org.mockito</groupId>
+		<artifactId>mockito-core</artifactId>
+		<version>3.0.0</version>
+		<scope>test</scope>
+	</dependency>
 
-	</dependencies>
-
+</dependencies>
 </project>
