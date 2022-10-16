@@ -20,6 +20,7 @@ public class ApplicationLauncher {
 		ConfigXML c = ConfigXML.getInstance();
 
 		System.out.println(c.getLocale());
+		///bjhbj
 
 		Locale.setDefault(new Locale(c.getLocale()));
 
