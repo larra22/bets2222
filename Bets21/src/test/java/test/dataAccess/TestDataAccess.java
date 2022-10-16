@@ -26,7 +26,7 @@ import exceptions.EventAlreadyExists;
 import exceptions.PronosticoAlreadyExists;
 import exceptions.QuestionAlreadyExist;
 import exceptions.UserAlreadyExists;
-
+//Coemntatrio
 public class TestDataAccess {
 	protected  EntityManager  db;
 	protected  EntityManagerFactory emf;
