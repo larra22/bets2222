@@ -82,6 +82,11 @@ public class AnadirUsuarioParameter {
 	public void setdNI(String dNI) {
 		this.dNI = dNI;
 	}
+
+	public int getId() {
+		return id;
+	}
+
 	
 	
 }
